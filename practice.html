@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let a = [3.5, 7.6, 8.3];
+      document.write("Mảng ban đầu là: " + "[" + a + "]" + "<br>");
+      let addingPosition = Number(
+        prompt("Nhập vị trí phần tử mà bạn muốn nhập: ")
+      );
+      let n = Number(prompt("Nhập số mà bạn muốn thêm: "));
+      a.splice(addingPosition, 0, n);
+      document.write("Mảng sau khi thêm là " + "[" + a + "]" + "<br/>");
+
+      let removingPosition = Number(
+        prompt("Nhập vị trí phần tử mà bạn muốn xoá: ")
+      );
+      a.splice(removingPosition, 1);
+      document.write("Mảng sau khi xoá là " + "[" + a + "]");
+    </script>
+  </body>
+</html>

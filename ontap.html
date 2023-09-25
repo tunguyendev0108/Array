@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let a = [-9, -5, 0, 2, -3, 4, 5, 8];
+
+      //   function sumPositiveEvenNumbers(arr) {
+      //     var sum = 0;
+      //     for (let i = 0; i < a.length; i++) {
+      //       if (arr[i] % 2 == 0 && arr[i] > 0) {
+      //         sum += arr[i];
+      //       }
+      //     }
+      //     return sum;
+      //   }
+      //   console.log(sumPositiveEvenNumbers);
+
+      function sumNegativeOddNumbers(array) {
+        let sum = 0;
+        for (let i = 0; i < a.length; i++) {
+          if (array[i] < 0 && array[i] % 2 != 0) {
+            sum += array[i];
+          }
+        }
+        return sum;
+      }
+      console.log(sumNegativeOddNumbers);
+    </script>
+  </body>
+</html>

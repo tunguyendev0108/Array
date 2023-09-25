@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let x = [1, 5, 3, 39, 79, 68, 9, 10, 15, 19];
+      let v = Number(prompt("Nhập số nguyên V"));
+      let check = x.indexOf(v);
+      if (check == -1) {
+        alert("V is not in the array");
+      } else {
+        x.splice(check, 1);
+        x.push(0);
+        document.write("Mảng sau khi thay đổi: " + x + "<br>");
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let count = 0;
+      let arr = [];
+      let nhap;
+      while (nhap != "") {
+        nhap = prompt("Nhập số vào chuỗi");
+        if (nhap != "") {
+          arr.push(nhap);
+          if (nhap < 0) {
+            count++;
+          }
+        }
+      }
+      document.write("Các số đã nhập vào chuỗi: " + arr + "<br>");
+      document.write("Có " + count + " số nguyên âm trong chuỗi");
+    </script>
+  </body>
+</html>

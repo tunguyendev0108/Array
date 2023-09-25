@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Giá trị lớn nhất và trung bình các phần tử trong mảng</title>
+  </head>
+  <body>
+    <script>
+      let a = [4, 8, 2, 9, 15];
+      let max = a[0];
+      let average = (a[0] + a[1] + a[2] + a[3] + a[4]) / 5;
+      for (let i = 1; i < a.length; i++) {
+        if (a[i] > max) {
+          max = a[i];
+        }
+      }
+      document.write(
+        "Giá trị lớn nhất = " +
+          max +
+          " và giá trị trung bình các phần tử trong mảng = " +
+          average
+      );
+    </script>
+  </body>
+</html>

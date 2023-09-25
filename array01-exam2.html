@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Phần tử lớn nhất trong mảng và gia trị phần tử đó</title>
+  </head>
+  <body>
+    <script>
+      let numbers = [1, 5, 8, 99, 92, 53, 39, 79, 68, 29];
+      let max = numbers[0];
+      let index = 0;
+      for (let i = 1; i < numbers.length; i++) {
+        if (numbers[i] > max) {
+          max = numbers[i];
+          index = i;
+        }
+      }
+      document.write(
+        "Giá trị lớn nhất trong mảng trên = " +
+          max +
+          " và giá trị phần tử = " +
+          index
+      );
+    </script>
+  </body>
+</html>
