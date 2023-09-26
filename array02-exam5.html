@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let arr1 = [];
+      let arr2 = [];
+      let count = 0;
+      let nhap1;
+      let nhap2;
+
+      while (nhap1 != "") {
+        nhap1 = prompt("Nhập vào chuỗi 1");
+        if (nhap1 != "") {
+          arr1.push(nhap1);
+        } else {
+          alert("Kết thúc nhập chuỗi 1");
+        }
+      }
+      document.write("Array1 = [" + arr1 + "]<br>");
+
+      while (nhap2 != "") {
+        nhap2 = prompt("Nhập vào chuỗi 2");
+        if (nhap2 != "") {
+          arr2.push(nhap2);
+        } else {
+          alert("Kết thúc nhập chuỗi 2");
+        }
+      }
+      document.write("Array2 = [" + arr2 + "] <br>");
+      for (let i = 0; i < arr1.length; i++) {
+        for (let j = 0; j < arr2.length; j++) {
+          if (arr1[i] == arr2[j]) {
+            count += 1;
+          }
+        }
+      }
+      document.write("2 chuỗi có " + count + " phần từ giống nhau");
+    </script>
+  </body>
+</html>

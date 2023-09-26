@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Đếm ký tự số trong mảng</title>
+  </head>
+  <body>
+    <script>
+      let arr = [];
+      let nhap;
+      let count = 0;
+      while (nhap != "") {
+        nhap = prompt("Nhập phần tử mảng và Enter để kết thúc");
+        if (nhap != "") {
+          arr.push(nhap);
+          if (Number.isFinite(parseInt(nhap))) {
+            count++;
+          } else {
+            alert("Kết thúc nhập mảng");
+          }
+        }
+      }
+      document.write("Mảng đã nhập: [" + arr + "]<br>");
+      document.write("Số ký tự số trong mảng: " + count);
+    </script>
+  </body>
+</html>

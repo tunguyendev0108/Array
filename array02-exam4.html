@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let arr = [];
+      let nhap;
+      let count = 0;
+      while (nhap != "") {
+        nhap = prompt("Nhập phần tử mảng và Enter để kết thúc");
+        if (nhap != "") {
+          arr.push(nhap);
+        } else {
+          alert("Kết thúc nhập phần tử mảng");
+        }
+      }
+      let a = arr.join("");
+      document.write("Mảng đã nhập: [" + arr + "] <br>");
+      document.write("Số từ trong chuỗi: " + a.length);
+    </script>
+  </body>
+</html>
